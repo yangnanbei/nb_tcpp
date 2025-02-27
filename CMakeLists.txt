@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # 添加可执行文件
-add_executable(nb_tcp_app src/main.cpp)
+add_executable(nb_tcp_app src/main.cpp src/tuntap.cpp)
 
 # 包含头文件目录
 target_include_directories(nb_tcp_app PRIVATE ${CMAKE_SOURCE_DIR}/include)
